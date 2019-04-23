@@ -15,22 +15,139 @@
             <div class="box second crawler"></div>
             <div class="box third dangler"></div>
             <div class="box fourth jumper"></div>
-            <div class="box first spinner hide"></div>
-            <div class="box second crawler hide"></div>
-            <div class="box third dangler hide"></div>
-            <div class="box fourth jumper hide"></div>
-            <div class="box first spinner hide"></div>
-            <div class="box second crawler hide"></div>
-            <div class="box third dangler hide"></div>
-            <div class="box fourth jumper hide"></div>
-            <div class="box first spinner hide"></div>
-            <div class="box second crawler hide"></div>
-            <div class="box third dangler hide"></div>
-            <div class="box fourth jumper hide"></div>
+            <div class="box first spinner hide-when-small"></div>
+            <div class="box second crawler hide-when-small"></div>
+            <div class="box third dangler hide-when-small"></div>
+            <div class="box fourth jumper hide-when-small"></div>
+            <div class="box first spinner hide-when-small"></div>
+            <div class="box second crawler hide-when-small"></div>
+            <div class="box third dangler hide-when-small"></div>
+            <div class="box fourth jumper hide-when-small"></div>
+            <div class="box first spinner hide-when-small"></div>
+            <div class="box second crawler hide-when-small"></div>
+            <div class="box third dangler hide-when-small"></div>
+            <div class="box fourth jumper hide-when-small"></div>
         </div>
-        <div>
-            <h1>PAGE 2 STUFF!</h1>
-            <a href="index.html" class="btn btn-primary">Go Back</a>
+        <div class="purchase-form mx-auto">
+            <div class="card">
+                <h5 class="text-center py-4">
+                    <strong>Purchase Spinner Animation</strong>
+                </h5>
+                <div class="card-body px-lg-5 pt-0">
+                    <form class="text-center">
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="md-form">
+                                    <input
+                                        type="text"
+                                        id="materialRegisterFormFirstName"
+                                        class="form-control"
+                                        placeholder="Jane"
+                                        required
+                                    />
+                                    <label for="materialRegisterFormFirstName"
+                                        >First name</label
+                                    >
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="md-form">
+                                    <input
+                                        type="text"
+                                        id="materialRegisterFormLastName"
+                                        class="form-control"
+                                        placeholder="Doe"
+                                        required
+                                    />
+                                    <label for="materialRegisterFormLastName"
+                                        >Last name</label
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="md-form">
+                            <input
+                                type="email"
+                                id="materialRegisterFormEmail"
+                                class="form-control"
+                                placeholder="example@email.com"
+                            />
+                            <label for="materialRegisterFormEmail"
+                                >E-mail</label
+                            >
+                        </div>
+
+                        <div class="md-form">
+                            <input
+                                type="password"
+                                id="materialRegisterFormPassword"
+                                class="form-control"
+                                aria-describedby="materialRegisterFormPasswordHelpBlock"
+                                required
+                            />
+                            <label for="materialRegisterFormPassword"
+                                >Password</label
+                            >
+                        </div>
+
+                        <div class="md-form">
+                            <input
+                                type="password"
+                                id="materialRegisterFormPhone"
+                                class="form-control"
+                                aria-describedby="materialRegisterFormPhoneHelpBlock"
+                                required
+                            />
+                            <label for="materialRegisterFormPhone"
+                                >Phone number</label
+                            >
+                        </div>
+
+                        <div class="form-check">
+                            <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="materialPurchaseAnimation"
+                                required
+                            />
+                            <label
+                                class="form-check-label"
+                                for="materialPurchaseAnimation"
+                                >Purchase Animation</label
+                            >
+                        </div>
+
+                        <button
+                            class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0"
+                            type="button"
+                            data-toggle="modal"
+                            data-target=".bd-example-modal-sm"
+                        >
+                            Purchase Animation
+                        </button>
+                        <div
+                            class="modal fade bd-example-modal-sm"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="mySmallModalLabel"
+                            aria-hidden="true"
+                        >
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content d-flex">
+                                    <div class="box-container p-4">
+                                        <div
+                                            class="box first infinite-spin"
+                                        ></div>
+                                    </div>
+                                    <p>You have just purchased the spinner animation</p>
+                                    <a class="btn btn-rounded" href="index.html">Close</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
 
         <script src="javaScript.js"></script>
