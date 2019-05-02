@@ -34,18 +34,19 @@
                     <strong>Purchase Spinner Animation</strong>
                 </h5>
                 <div class="card-body px-lg-5 pt-0">
-                    <form class="text-center">
+                    <form class="text-center" name="purchaseForm">
                         <div class="form-row">
                             <div class="col">
                                 <div class="md-form">
                                     <input
                                         type="text"
-                                        id="materialRegisterFormFirstName"
+                                        id="FirstName"
                                         class="form-control"
                                         placeholder="Jane"
                                         required
+                                        
                                     />
-                                    <label for="materialRegisterFormFirstName"
+                                    <label for="FirstName"
                                         >First name</label
                                     >
                                 </div>
@@ -54,12 +55,13 @@
                                 <div class="md-form">
                                     <input
                                         type="text"
-                                        id="materialRegisterFormLastName"
+                                        id="LastName"
                                         class="form-control"
                                         placeholder="Doe"
                                         required
+                                        
                                     />
-                                    <label for="materialRegisterFormLastName"
+                                    <label for="LastName"
                                         >Last name</label
                                     >
                                 </div>
@@ -69,11 +71,13 @@
                         <div class="md-form">
                             <input
                                 type="email"
-                                id="materialRegisterFormEmail"
+                                id="Email"
                                 class="form-control"
                                 placeholder="example@email.com"
+                                required
+                                
                             />
-                            <label for="materialRegisterFormEmail"
+                            <label for="Email"
                                 >E-mail</label
                             >
                         </div>
@@ -81,48 +85,34 @@
                         <div class="md-form">
                             <input
                                 type="password"
-                                id="materialRegisterFormPassword"
+                                id="Password"
                                 class="form-control"
-                                aria-describedby="materialRegisterFormPasswordHelpBlock"
+                                aria-describedby="PasswordHelpBlock"
                                 required
+                                
                             />
-                            <label for="materialRegisterFormPassword"
+                            <label for="Password"
                                 >Password</label
                             >
                         </div>
 
                         <div class="md-form">
                             <input
-                                type="password"
-                                id="materialRegisterFormPhone"
+                                type="tel"
+                                id="Phone"
                                 class="form-control"
-                                aria-describedby="materialRegisterFormPhoneHelpBlock"
+                                aria-describedby="PhoneHelpBlock"
                                 required
                             />
-                            <label for="materialRegisterFormPhone"
+                            <label for="Phone"
                                 >Phone number</label
                             >
                         </div>
 
-                        <div class="form-check">
-                            <input
-                                type="checkbox"
-                                class="form-check-input"
-                                id="materialPurchaseAnimation"
-                                required
-                            />
-                            <label
-                                class="form-check-label"
-                                for="materialPurchaseAnimation"
-                                >Purchase Animation</label
-                            >
-                        </div>
-
                         <button
+                            id="purchaseButton"
                             class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0"
-                            type="button"
-                            data-toggle="modal"
-                            data-target=".bd-example-modal-sm"
+                            type="submit"
                         >
                             Purchase Animation
                         </button>

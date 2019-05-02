@@ -131,3 +131,21 @@ function addStretchListener(stretchBox) {
 Array.from(document.getElementsByClassName("stretcher")).forEach(
     addStretchListener
 );
+
+window.addEventListener("DOMContentLoaded", function() {
+    for (let i = 0; i < 20; i++) {
+        (function(n) {
+            let box = document.getElementById("spin-all-the-time");
+            box.classList.add("spin");
+            setTimeout(function() {
+                console.log(i);
+                box.classList.remove("spin");
+            });
+        })(i);
+    }
+});
+
+document.forms.purchaseForm.addEventListener("submit", event =>{
+    event.preventDefault();
+    $(".bd-example-modal-sm").modal("show");
+});
